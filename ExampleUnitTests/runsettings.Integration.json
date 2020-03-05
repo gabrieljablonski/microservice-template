@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "TASKS": {
+      "Host": "https://api-labs.onyou.com.br/int/domain/core/tasks",
+      "Port": -1
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ApiWrapper": {
+    "TASKS": {
+      "Host": "https://localhost",
+      "Port": 5041
+    }
+  }
+}

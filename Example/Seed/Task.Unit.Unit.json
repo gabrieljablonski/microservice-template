@@ -1,0 +1,337 @@
+// Comments can be added using double slashes at the start of a line, ignoring whitespace.
+[
+  // All elements are used in `allTasks` test
+  {
+    // Used in unit tests `evalGet01` and `evalPostAlreadyExists`
+    "pages": [
+      {
+        "name": "perfil",
+        "elements": [
+          {
+            "type": "checkbox",
+            "name": "gostoMusical",
+            "title": "Quais gêneros musicais você aprecia?",
+            "description": "Informe-nos quais tipos de musica você costuma ouvir",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "rock",
+                "text": "Rock"
+              },
+              {
+                "value": "sertanejo",
+                "text": "Sertanejo"
+              },
+              {
+                "value": "pop",
+                "text": "Pop"
+              },
+              {
+                "value": "pagode",
+                "text": "Pagode"
+              },
+              {
+                "value": "axe",
+                "text": "Axé"
+              },
+              {
+                "value": "classica",
+                "text": "Clássica"
+              },
+              {
+                "value": "rap",
+                "text": "Rap"
+              },
+              {
+                "value": "func_carioca",
+                "text": "Funk Carioca"
+              },
+              {
+                "value": "func_tradicional",
+                "text": "Funk (Tradicional)"
+              }
+            ],
+            "otherText": "Outro (descreva)",
+            "colCount": 2,
+            "hasSelectAll": true,
+            "hasNone": true,
+            "noneText": "Nenhum",
+            "selectAllText": "Todos"
+          },
+          {
+            "type": "radiogroup",
+            "name": "frequenciaComoTurista",
+            "title": "Quantas vezes você viaja a turismo?",
+            "description": "Queremos saber o quanto você gosta de viajar e passear.",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "raramente",
+                "text": "Raramente"
+              },
+              {
+                "value": "anualmente",
+                "text": "Uma vez ao ano"
+              },
+              {
+                "value": "quadrimestralmente",
+                "text": "Mas de 3 vezes ao ano"
+              }
+            ],
+            "otherText": "Frequentemente"
+          },
+          {
+            "type": "comment",
+            "name": "sobreMim",
+            "title": "Sobre você",
+            "description": "Cite algumas das suas características que você ache importante para melhor te atendermos."
+          }
+        ],
+        "title": "Pesquisa de Perfil",
+        "description": "Conte-nos um pouco mais de você"
+      }
+    ],
+    "id": "pesquisaPerfil",
+    "description": "Pesquisa de Perfil"
+  },
+  {
+    // Used in unit test `evalGet02`
+    "pages": [
+      {
+        "name": "opiniao",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "ExperienciaComServico",
+            "title": "A quanto tempo conhece os nossos serviços?",
+            "description": "Queremos saber o quão experiente como nosso cliente você é.",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "mais5anos",
+                "text": "Há mais de 5 anos"
+              },
+              {
+                "value": "mais1ano",
+                "text": "Há mais de 1 ano"
+              },
+              {
+                "value": "mais1mes",
+                "text": "Há máis de 1 mês"
+              }
+            ],
+            "otherText": "Minha primeira compra"
+          },
+          {
+            "type": "rating",
+            "name": "Recomendacao",
+            "title": "O quanto você recomendaria os nossos serviços a amigos ou parentes? ",
+            "description": "Selecione uma nota da escala, onde 1 significaria que não recomendaria de forma alguma e 10 você recomendaria fortemente.",
+            "rateMax": 10
+          },
+          {
+            "type": "comment",
+            "name": "Sugestoes",
+            "visibleIf": "{Recomendacao} < 7",
+            "title": "Que sugestões você teria para melhorarmos a sua experiência, da próxima vez?"
+          }
+        ],
+        "title": "Pesquisa de Opinião",
+        "description": "Qual a sua opinião sobre os nossos serviços"
+      }
+    ],
+    "id": "pesquisaOpiniao",
+    "description": "Pesquisa de Opinião"
+  },
+  {
+    // Used in unit test `evalDel01`
+    "pages": [
+      {
+        "name": "perfil",
+        "elements": [
+          {
+            "type": "checkbox",
+            "name": "gostoMusical",
+            "title": "Quais gêneros musicais você aprecia?",
+            "description": "Informe-nos quais tipos de musica você costuma ouvir",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "rock",
+                "text": "Rock"
+              },
+              {
+                "value": "sertanejo",
+                "text": "Sertanejo"
+              },
+              {
+                "value": "pop",
+                "text": "Pop"
+              },
+              {
+                "value": "pagode",
+                "text": "Pagode"
+              },
+              {
+                "value": "axe",
+                "text": "Axé"
+              },
+              {
+                "value": "classica",
+                "text": "Clássica"
+              },
+              {
+                "value": "rap",
+                "text": "Rap"
+              },
+              {
+                "value": "func_carioca",
+                "text": "Funk Carioca"
+              },
+              {
+                "value": "func_tradicional",
+                "text": "Funk (Tradicional)"
+              }
+            ],
+            "otherText": "Outro (descreva)",
+            "colCount": 2,
+            "hasSelectAll": true,
+            "hasNone": true,
+            "noneText": "Nenhum",
+            "selectAllText": "Todos"
+          },
+          {
+            "type": "radiogroup",
+            "name": "frequenciaComoTurista",
+            "title": "Quantas vezes você viaja a turismo?",
+            "description": "Queremos saber o quanto você gosta de viajar e passear.",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "raramente",
+                "text": "Raramente"
+              },
+              {
+                "value": "anualmente",
+                "text": "Uma vez ao ano"
+              },
+              {
+                "value": "quadrimestralmente",
+                "text": "Mas de 3 vezes ao ano"
+              }
+            ],
+            "otherText": "Frequentemente"
+          },
+          {
+            "type": "comment",
+            "name": "sobreMim",
+            "title": "Sobre você",
+            "description": "Cite algumas das suas características que você ache importante para melhor te atendermos."
+          }
+        ],
+        "title": "Pesquisa de Perfil",
+        "description": "Conte-nos um pouco mais de você"
+      }
+    ],
+    "id": "pesquisaFinanceira",
+    "description": "Pesquisa Financeira"
+  },
+  {
+    // Used in unit test `evalDel02`
+    "pages": [
+      {
+        "name": "opiniao",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "ExperienciaComServico",
+            "title": "A quanto tempo conhece os nossos serviços?",
+            "description": "Queremos saber o quão experiente como nosso cliente você é.",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "mais5anos",
+                "text": "Há mais de 5 anos"
+              },
+              {
+                "value": "mais1ano",
+                "text": "Há mais de 1 ano"
+              },
+              {
+                "value": "mais1mes",
+                "text": "Há máis de 1 mês"
+              }
+            ],
+            "otherText": "Minha primeira compra"
+          },
+          {
+            "type": "rating",
+            "name": "Recomendacao",
+            "title": "O quanto você recomendaria os nossos serviços a amigos ou parentes? ",
+            "description": "Selecione uma nota da escala, onde 1 significaria que não recomendaria de forma alguma e 10 você recomendaria fortemente.",
+            "rateMax": 10
+          },
+          {
+            "type": "comment",
+            "name": "Sugestoes",
+            "visibleIf": "{Recomendacao} < 7",
+            "title": "Que sugestões você teria para melhorarmos a sua experiência, da próxima vez?"
+          }
+        ],
+        "title": "Pesquisa de Opinião",
+        "description": "Qual a sua opinião sobre os nossos serviços"
+      }
+    ],
+    "id": "pesquisaRenda",
+    "description": "Pesquisa de Renda"
+  },
+  {
+    // Used in unit test `evalPut01`
+    "pages": [
+      {
+        "name": "opiniao",
+        "elements": [
+          {
+            "type": "radiogroup",
+            "name": "ExperienciaComServico",
+            "title": "A quanto tempo conhece os nossos serviços?",
+            "description": "Queremos saber o quão experiente como nosso cliente você é.",
+            "hasOther": true,
+            "choices": [
+              {
+                "value": "mais5anos",
+                "text": "Há mais de 5 anos"
+              },
+              {
+                "value": "mais1ano",
+                "text": "Há mais de 1 ano"
+              },
+              {
+                "value": "mais1mes",
+                "text": "Há máis de 1 mês"
+              }
+            ],
+            "otherText": "Minha primeira compra"
+          },
+          {
+            "type": "rating",
+            "name": "Recomendacao",
+            "title": "O quanto você recomendaria os nossos serviços a amigos ou parentes? ",
+            "description": "Selecione uma nota da escala, onde 1 significaria que não recomendaria de forma alguma e 10 você recomendaria fortemente.",
+            "rateMax": 10
+          },
+          {
+            "type": "comment",
+            "name": "Sugestoes",
+            "visibleIf": "{Recomendacao} < 7",
+            "title": "Que sugestões você teria para melhorarmos a sua experiência, da próxima vez?"
+          }
+        ],
+        "title": "Pesquisa de Opinião",
+        "description": "Qual a sua opinião sobre os nossos serviços"
+      }
+    ],
+    "id": "pesquisaInovacao",
+    "description": "Pesquisa Inovação"
+  }
+]

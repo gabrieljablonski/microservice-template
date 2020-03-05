@@ -1,0 +1,24 @@
+{
+  "allTasks": [
+    {
+      "id": "pesquisaOpiniao",
+      "description": "Pesquisa de Opinião"
+    },
+    {
+      "id": "pesquisaPerfil",
+      "description": "Pesquisa de Perfil"
+    },
+    {
+      "id": "pesquisaFinanceira",
+      "description": "Pesquisa Financeira"
+    },
+    {
+      "id": "pesquisaRenda",
+      "description": "Pesquisa de Renda"
+    },
+    {
+      "id": "pesquisaInovacao",
+      "description": "Pesquisa Inovação"
+    }
+  ]
+}
